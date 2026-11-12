@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] | BBA (Hons) Digital Portfolio — TAPMI Bengaluru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        tapmi: {
+                            navy: '#0F2537',
+                            maroon: '#8B1E24',
+                            gold: '#C59B27',
+                            slate: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-tapmi-navy selection:text-white">
+
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-serif text-xl font-bold text-tapmi-navy tracking-tight">
+                [Your Name]<span class="text-tapmi-maroon">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-tapmi-navy transition">About</a>
+                <a href="#projects" class="hover:text-tapmi-navy transition">Coursework Projects (6)</a>
+                <a href="#skills" class="hover:text-tapmi-navy transition">Skills & Credentials</a>
+                <a href="#contact" class="hover:text-tapmi-navy transition">Contact</a>
+            </nav>
+            <a href="#resume-modal" onclick="openResumeModal(event)" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-tapmi-navy text-white rounded hover:bg-slate-800 transition shadow-sm">
+                Resume / CV
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-8 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-tapmi-navy">
+                    <span class="w-2 h-2 rounded-full bg-tapmi-maroon"></span>
+                    <span>BBA (Hons) Year 1 • T. A. Pai Management Institute (TAPMI), Bengaluru</span>
+                </div>
+                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-tapmi-navy leading-tight">
+                    Turning data, financial rigor, and human insight into <span class="italic text-tapmi-maroon">business clarity.</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+                    Welcome to my digital portfolio—a curated record of my first-year academic projects spanning Business Intelligence, Financial Accounting, Mathematics, Anthropology, Management, and Rhetoric.
+                </p>
+                <div class="pt-2 flex flex-wrap gap-4">
+                    <a href="#projects" class="px-6 py-3 bg-tapmi-navy text-white text-sm font-semibold rounded-md hover:bg-slate-800 transition shadow-sm">
+                        Explore 6 Subject Projects
+                    </a>
+                    <a href="#contact" class="px-6 py-3 bg-white text-tapmi-navy border border-slate-300 text-sm font-semibold rounded-md hover:bg-slate-50 transition">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-4 flex justify-center">
+                <!-- Profile Photo Placeholder -->
+                <div class="relative w-64 h-72 rounded-2xl bg-slate-100 border-2 border-dashed border-slate-300 flex flex-col items-center justify-center text-center p-6 shadow-inner">
+                    <svg class="w-12 h-12 text-slate-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <p class="text-xs font-semibold text-slate-600">Insert Your Professional Headshot Here</p>
+                    <p class="text-[11px] text-slate-400 mt-1">(Clean background, smart casual or business attire)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section (Step 6: Write a Story, Not a List) -->
+    <section id="about" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <p class="text-xs font-bold uppercase tracking-widest text-tapmi-maroon mb-2">01 / Narrative</p>
+                <h2 class="font-serif text-3xl font-bold text-tapmi-navy">About Me</h2>
+            </div>
+            <div class="md:col-span-8 space-y-5 text-slate-600 leading-relaxed text-base">
+                <p>
+                    Hi, I’m <strong class="text-slate-900">[Your Full Name]</strong>, a first-year BBA (Hons) student at <strong class="text-slate-900">T. A. Pai Management Institute (TAPMI), Bengaluru</strong>. My academic focus sits at the intersection of quantitative precision and human-centered inquiry—combining tools like Power BI and financial modeling with the qualitative lens of anthropology and critical rhetoric.
+                </p>
+                <p>
+                    What drives me is the challenge of translating raw numbers and cultural patterns into practical business decisions. Whether I am building interactive KPI dashboards, evaluating corporate balance sheets, or conducting ethnographic field studies in Bengaluru, I aim to bridge analytical depth with clear storytelling.
+                </p>
+                <p>
+                    I am currently strengthening my foundation in business analytics and strategy, and I am actively seeking <strong class="text-slate-900">summer internships, live industry projects, and research collaborations</strong> where I can contribute structured problem-solving and fresh perspectives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Section (Step 4: Curate and Showcase Your Best Work) -->
+    <section id="projects" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-tapmi-maroon mb-2">02 / Proof of Work</p>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-tapmi-navy">First-Year Academic Projects</h2>
+                    <p class="text-slate-600 mt-2 max-w-2xl">Ordered by visual and analytical impact. Click any project card to view full methodology, artifacts, and key outcomes.</p>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="flex flex-wrap gap-2" id="filter-buttons">
+                    <button onclick="filterProjects('all')" class="filter-btn active px-3.5 py-1.5 rounded-full text-xs font-semibold bg-tapmi-navy text-white transition">All (6)</button>
+                    <button onclick="filterProjects('quant')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Data & Quant</button>
+                    <button onclick="filterProjects('business')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Business & Strategy</button>
+                    <button onclick="filterProjects('humanities')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Humanities & Comm</button>
+                </div>
+            </div>
+
+            <!-- 6 Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+
+                <!-- 1. POWER BI -->
+                <article data-category="quant" class="project-card group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-tapmi-navy to-slate-800 p-6 flex flex-col justify-between text-white relative">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-white/15 rounded">01 • Power BI</span>
+                                <span class="text-xs text-slate-300">Data Visualization</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-amber-300 font-medium">Featured Lead Project</p>
+                                <h3 class="font-serif text-xl font-bold mt-1">[Sales & Profitability Executive Dashboard]</h3>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-slate-600"><strong class="text-slate-900">Brief:</strong> [Analyze multi-regional retail sales data to uncover margin leaks and top-performing customer segments.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">My Role:</strong> [Cleaned raw datasets in Power Query, wrote DAX measures, and designed a 3-page interactive report.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">Outcome:</strong> [Identified that 20% of SKUs generated 68% of net profit, guiding inventory reallocation.]</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Power BI</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">DAX</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Data Modeling</span>
+                        </div>
+                        <button onclick="openProjectModal('powerbi')" class="w-full py-2.5 bg-white border border-slate-300 text-tapmi-navy text-xs font-semibold rounded-lg group-hover:bg-tapmi-navy group-hover:text-white transition">
+                            View Dashboard & Case Details →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 2. ACCOUNTING -->
+                <article data-category="business" class="project-card group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-slate-800 to-slate-700 p-6 flex flex-col justify-between text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-white/15 rounded">02 • Accounting</span>
+                                <span class="text-xs text-slate-300">Financial Analysis</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold">[3-Year Financial Health & Ratio Analysis of (Company)]</h3>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-slate-600"><strong class="text-slate-900">Brief:</strong> [Evaluate liquidity, solvency, and operational efficiency using audited annual financial statements.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">My Role:</strong> [Extracted Balance Sheet & P&L figures, built ratio models in Excel, and benchmarked against competitors.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">Outcome:</strong> [Demonstrated a 14% improvement in working capital cycle despite industry-wide input inflation.]</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Ratio Analysis</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">DuPont Model</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">MS Excel</span>
+                        </div>
+                        <button onclick="openProjectModal('accounting')" class="w-full py-2.5 bg-white border border-slate-300 text-tapmi-navy text-xs font-semibold rounded-lg group-hover:bg-tapmi-navy group-hover:text-white transition">
+                            View Financial Model & Report →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 3. MATHS -->
+                <article data-category="quant" class="project-card group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-tapmi-maroon to-rose-950 p-6 flex flex-col justify-between text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-white/15 rounded">03 • Business Maths</span>
+                                <span class="text-xs text-rose-200">Quantitative Modeling</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold">[Cost-Revenue Optimization & Break-Even Modeling]</h3>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-slate-600"><strong class="text-slate-900">Brief:</strong> [Determine profit-maximizing production volume and pricing under resource constraints.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">My Role:</strong> [Formulated linear programming constraints and differential calculus models to test sensitivity.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">Outcome:</strong> [Identified optimal output thresholds that projected a 12% boost in contribution margin.]</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Optimization</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Linear Programming</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Excel Solver</span>
+                        </div>
+                        <button onclick="openProjectModal('maths')" class="w-full py-2.5 bg-white border border-slate-300 text-tapmi-navy text-xs font-semibold rounded-lg group-hover:bg-tapmi-navy group-hover:text-white transition">
+                            View Mathematical Model →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 4. ANTHROPOLOGY -->
+                <article data-category="humanities" class="project-card group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-emerald-900 to-teal-950 p-6 flex flex-col justify-between text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-white/15 rounded">04 • Anthropology</span>
+                                <span class="text-xs text-emerald-200">Ethnographic Research</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold">[Ethnographic Study of Urban Consumer Spaces in Bengaluru]</h3>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-slate-600"><strong class="text-slate-900">Brief:</strong> [Observe how social trust, cultural norms, and spatial design shape everyday retail interactions.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">My Role:</strong> [Conducted field observations, semi-structured interviews, and thematic synthesis of field notes.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">Outcome:</strong> [Showed how relational trust and micro-credit drive repeat patronage over price discounting.]</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Field Observation</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Consumer Culture</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Qualitative Synthesis</span>
+                        </div>
+                        <button onclick="openProjectModal('anthropology')" class="w-full py-2.5 bg-white border border-slate-300 text-tapmi-navy text-xs font-semibold rounded-lg group-hover:bg-tapmi-navy group-hover:text-white transition">
+                            Read Ethnographic Field Study →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 5. TLM -->
+                <article data-category="business" class="project-card group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-amber-800 to-yellow-950 p-6 flex flex-col justify-between text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-white/15 rounded">05 • TLM</span>
+                                <span class="text-xs text-amber-200">Management & Systems</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold">[Organizational Dynamics & Management Case Analysis]</h3>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-slate-600"><strong class="text-slate-900">Brief:</strong> [Diagnose operational bottlenecks and leadership alignment in a fast-scaling enterprise case.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">My Role:</strong> [Mapped stakeholder incentives, led team synthesis, and co-authored strategic recommendations.]</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">Outcome:</strong> [Delivered a structured 3-pillar execution roadmap evaluated on feasibility and impact.]</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Systems Thinking</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Case Method</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Team Leadership</span>
+                        </div>
+                        <button onclick="openProjectModal('tlm')" class="w-full py-2.5 bg-white border border-slate-300 text-tapmi-navy text-xs font-semibold rounded-lg group-hover:bg-tapmi-navy group-hover:text-white transition">
+                            View Case Presentation →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 6. LLR -->
+                <article data-category="humanities" class="project-card group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-indigo-900 to-slate-900 p-6 flex flex-col justify-between text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-white/15 rounded">06 • LLR</span>
+                                <span class="text-xs text-indigo-200">Rhetoric & Reasoning</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold">Rhetorical Analysis &amp; Rebranding of Ajay Banga’s Public Message</h3>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-slate-600"><strong class="text-slate-900">Brief:</strong> Group 5 analysed how World Bank President Ajay Banga persuades in his Bloomberg interview, then proposed a rebrand of his public message.</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">My Role:</strong> Wrote and presented 4 slides: the two Logos slides (argument structure, AI distinction, sectors and self-interest) and the rebrand’s message strategy and before/after rewrite.</p>
+                            <p class="text-slate-600"><strong class="text-slate-900">Outcome:</strong> Delivered two presentations (17 slides), moving from critique to a practical “Shared-Value Check” campaign proposal.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Rhetorical Analysis</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Logos</span>
+                            <span class="px-2 py-0.5 bg-white border border-slate-200 rounded text-[11px] font-medium text-slate-600">Message Strategy</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <button onclick="openProjectModal('llr')" class="w-full py-2.5 bg-white border border-slate-300 text-tapmi-navy text-xs font-semibold rounded-lg hover:bg-slate-100 transition">
+                                Project Details
+                            </button>
+                            <a class='w-full py-2.5 bg-tapmi-navy border border-tapmi-navy text-white text-xs font-semibold rounded-lg hover:bg-slate-800 transition text-center' href='/llr#my-slides'>
+                                View My Slides →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Credentials (Step 3: Core Components) -->
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <p class="text-xs font-bold uppercase tracking-widest text-tapmi-maroon mb-2">03 / Capabilities</p>
+                <h2 class="font-serif text-3xl font-bold text-tapmi-navy">Skills & Academic Foundation</h2>
+            </div>
+            <div class="md:col-span-8 grid sm:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h3 class="font-semibold text-tapmi-navy mb-3">Analytics & Quantitative Tools</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>• Microsoft Power BI (Power Query, DAX, Dashboards)</li>
+                        <li>• Microsoft Excel (Financial Modeling, Solver, Pivot Tables)</li>
+                        <li>• Business Mathematics & Optimization</li>
+                        <li>• Financial Statement & Ratio Analysis</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h3 class="font-semibold text-tapmi-navy mb-3">Research, Strategy & Communication</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>• Ethnographic & Qualitative Field Research</li>
+                        <li>• Structured Case Analysis & Systems Thinking</li>
+                        <li>• Critical Reasoning & Rhetorical Framing</li>
+                        <li>• Executive Presentation & Storytelling</li>
+                    </ul>
+                </div>
+                <div class="sm:col-span-2 bg-white p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-tapmi-maroon">Education</span>
+                        <h3 class="font-serif text-lg font-bold text-tapmi-navy">Bachelor of Business Administration (BBA Honours)</h3>
+                        <p class="text-sm text-slate-600">T. A. Pai Management Institute (TAPMI), Bengaluru • Manipal Academy of Higher Education (MAHE)</p>
+                    </div>
+                    <span class="text-xs font-semibold px-3 py-1.5 bg-slate-100 text-slate-700 rounded-md self-start sm:self-center">
+                        2026 – 2030 (Year 1)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-tapmi-navy text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+            <div class="space-y-2 max-w-xl">
+                <p class="text-xs font-bold uppercase tracking-widest text-amber-400">04 / Get In Touch</p>
+                <h2 class="font-serif text-3xl font-bold">Let’s connect on projects, research, or internships.</h2>
+                <p class="text-slate-300 text-sm">
+                    Open to conversations with faculty mentors, industry practitioners, and fellow students.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="mailto:your.name@learner.manipal.edu" class="px-5 py-3 bg-white text-tapmi-navy text-sm font-semibold rounded-lg hover:bg-slate-100 transition text-center">
+                    [your.name@learner.manipal.edu]
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="px-5 py-3 bg-white/10 border border-white/20 text-white text-sm font-semibold rounded-lg hover:bg-white/20 transition text-center">
+                    LinkedIn Profile ↗
+                </a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between text-xs text-slate-400 gap-4">
+            <p>© 2026 [Your Full Name]. Built for TAPMI Bengaluru BBA (Hons) Digital Portfolio.</p>
+            <p>Last Updated: November 2026</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 md:p-8 relative">
+            <button onclick="closeModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600 font-bold">✕</button>
+            <span id="modal-subject" class="text-xs font-bold uppercase tracking-wider text-tapmi-maroon">Subject</span>
+            <h3 id="modal-title" class="font-serif text-2xl font-bold text-tapmi-navy mt-1 mb-4">Project Title</h3>
+
+            <!-- Visual Artifact Placeholder -->
+            <div class="w-full h-48 rounded-xl bg-slate-100 border-2 border-dashed border-slate-300 flex flex-col items-center justify-center text-center p-4 mb-6">
+                <p id="modal-artifact-label" class="text-xs font-semibold text-slate-700">[Insert High-Resolution Screenshot / Chart / Dashboard Preview Here]</p>
+                <p id="modal-artifact-note" class="text-[11px] text-slate-400 mt-1">Tip from Guide: Ensure screenshots are sharp, well-cropped, and legible on mobile.</p>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-600">
+                <div>
+                    <h4 class="font-semibold text-slate-900">1. The Problem / Assignment Brief</h4>
+                    <p id="modal-brief" class="mt-1"></p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900">2. My Specific Role & Contribution</h4>
+                    <p id="modal-role" class="mt-1"></p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900">3. Tools, Methods & Frameworks</h4>
+                    <p id="modal-tools" class="mt-1"></p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900">4. Measurable Outcome & Key Reflection</h4>
+                    <p id="modal-outcome" class="mt-1"></p>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-200 flex justify-between items-center">
+                <a id="modal-link" href="#" target="_blank" class="px-5 py-2.5 bg-tapmi-navy text-white text-xs font-semibold rounded-lg hover:bg-slate-800 transition">
+                    Open Full File / Google Drive Link ↗
+                </a>
+                <button onclick="closeModal()" class="text-xs font-semibold text-slate-500 hover:text-slate-800">Close Preview</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const projectData = {
+            powerbi: {
+                subject: "01 • Business Intelligence (Power BI)",
+                title: "[Sales & Profitability Executive Dashboard]",
+                artifact: "[Embed Power BI Public Link or High-Res Dashboard Screenshot]",
+                brief: "[Replace with your Power BI problem statement: e.g., Evaluated a 10,000-row retail transaction dataset to diagnose declining net margins across four regions.]",
+                role: "[Replace with your exact contribution: e.g., Automated data cleaning using Power Query, built a star-schema data model, and created dynamic DAX KPIs.]",
+                tools: "Microsoft Power BI Desktop, Power Query, DAX, Visual Storytelling",
+                outcome: "[Replace with your key finding: e.g., Uncovered high discount leakage in the West zone and proposed SKU rationalization projected to lift margin by 4.5%.]"
+            },
+            accounting: {
+                subject: "02 • Financial Accounting",
+                title: "[3-Year Financial Health & Ratio Analysis of (Company Name)]",
+                artifact: "[Insert Ratio Comparison Chart or Balance Sheet Summary Screenshot]",
+                brief: "[Replace with your Accounting brief: e.g., Assessed the financial stability, liquidity, and profitability of a Nifty 50 company from FY23 to FY25.]",
+                role: "[Replace with your role: e.g., Extracted data from audited annual reports, computed 15+ financial ratios, and performed horizontal/vertical trend analysis.]",
+                tools: "Financial Statement Analysis, DuPont Decomposition, MS Excel",
+                outcome: "[Replace with your outcome: e.g., Concluded that strong operating cash flows offset short-term debt obligations, earning an 'A' grade evaluation.]"
+            },
+            maths: {
+                subject: "03 • Business Mathematics",
+                title: "[Cost-Revenue Optimization & Break-Even Modeling]",
+                artifact: "[Insert Optimization Graph or Excel Solver Output Screenshot]",
+                brief: "[Replace with your Maths brief: e.g., Modeled non-linear cost and revenue functions to identify optimal production quantities under budget constraints.]",
+                role: "[Replace with your role: e.g., Formulated constraint equations, solved for maxima/minima using calculus, and verified scenarios in Excel Solver.]",
+                tools: "Differential Calculus, Linear Programming, Matrix Algebra, MS Excel",
+                outcome: "[Replace with your outcome: e.g., Identified the exact break-even threshold and profit-maximizing output mix across 3 product lines.]"
+            },
+            anthropology: {
+                subject: "04 • Anthropology",
+                title: "[Ethnographic Study of Consumer Habits in Urban Bengaluru]",
+                artifact: "[Insert Field Observation Photo, Mind-Map, or Infographic]",
+                brief: "[Replace with your Anthropology brief: e.g., Investigated how cultural habits and neighborhood social networks shape everyday buying behavior.]",
+                role: "[Replace with your role: e.g., Conducted 6 hours of participant observation and 8 semi-structured interviews, coding recurring behavioral themes.]",
+                tools: "Participant Observation, Ethnographic Field Notes, Thematic Coding",
+                outcome: "[Replace with your outcome: e.g., Demonstrated how social trust and informal credit mechanisms sustain local Kirana ecosystems against quick-commerce.]"
+            },
+            tlm: {
+                subject: "05 • TLM (Thinking, Learning & Management)",
+                title: "[Organizational Structure & Management Case Study]",
+                artifact: "[Insert Framework Diagram or Presentation Slide Cover]",
+                brief: "[Replace with your TLM brief: e.g., Analyzed communication breakdowns and decision bottlenecks in a growing service organization.]",
+                role: "[Replace with your role: e.g., Facilitated group synthesis, applied systems-thinking causal loops, and structured the final executive deck.]",
+                tools: "Systems Thinking, Stakeholder Mapping, SWOT/PESTLE Frameworks",
+                outcome: "[Replace with your outcome: e.g., Presented a 3-stage governance framework praised for clarity and practical implementation.]"
+            },
+            llr: {
+                subject: "06 • LLR (Language, Literature & Rhetoric)",
+                title: "Rhetorical Analysis & Rebranding of Ajay Banga’s Public Message",
+                artifact: "Group 5 presentations: Rhetorical Analysis (9 slides) + Rebranding Proposal (8 slides)",
+                artifactNote: "My slides: Rhetorical Analysis 7–8 · Rebranding 5–6, each marked “Presenter: Sneha”",
+                link: "/llr.html",
+                linkLabel: "View My Slides & Full Presentations ↗",
+                brief: "Analyse the rhetoric of World Bank President Ajay Banga’s Bloomberg Originals interview with Francine Lacqua (15 February 2026), then propose a rebrand of his public message. Our group argued that Banga persuades business audiences by reframing youth job creation as a shared economic interest rather than charity, and proposed repositioning him from “Corporate Fixer” to “Mutual-Interest Builder”, around the question “What’s in it for all of us?”",
+                role: "I wrote and presented four slides. In the Rhetorical Analysis I covered Logos. Slide 7 mapped his core argument (growing workforces need jobs, supported by infrastructure, sound governance and private investment) and his Big AI vs. Small AI distinction. Slide 8 analysed the five job sectors he names, his twenty-country prioritisation and how he answers “What’s in it for me?” through self-interest, along with the limits of that logic. In the Rebranding Proposal, slide 5 designed the three-step message strategy (start with the stake, explain how it works, show the evidence) and the “Shared-Value Check” campaign format. Slide 6 presented the before/after rewrite of Banga’s business-led answer into a public-facing version.",
+                tools: "SOAPS, Rhetorical Triangle, Ethos / Pathos / Logos, Argument Mapping, Message Reframing, Campaign Design",
+                outcome: "We delivered two connected presentations that moved from critique (what works and what is missing in Banga’s persuasion) to a concrete, accountable campaign proposal. My key takeaway was that logic persuades best when it names its own limits. Separating targets from verified results made our rebrand more credible than a slogan alone."
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = projectData[key];
+            document.getElementById('modal-subject').innerText = data.subject;
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-artifact-label').innerText = data.artifact;
+            document.getElementById('modal-brief').innerText = data.brief;
+            document.getElementById('modal-role').innerText = data.role;
+            document.getElementById('modal-tools').innerText = data.tools;
+            document.getElementById('modal-outcome').innerText = data.outcome;
+            document.getElementById('modal-artifact-note').innerText = data.artifactNote || 'Tip from Guide: Ensure screenshots are sharp, well-cropped, and legible on mobile.';
+            const link = document.getElementById('modal-link');
+            link.href = data.link || '#';
+            link.target = data.link ? '_self' : '_blank';
+            link.innerText = data.linkLabel || 'Open Full File / Google Drive Link ↗';
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+
+        function openResumeModal(e) {
+            e.preventDefault();
+            alert("Tip: Link this button directly to your Google Drive Resume PDF (set to 'Anyone with the link can view')!");
+        }
+
+        function closeModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-tapmi-navy', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-600');
+            });
+            event.target.classList.remove('bg-slate-100', 'text-slate-600');
+            event.target.classList.add('bg-tapmi-navy', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html><script async src="/.netlify/scripts/ar" data-netlify-deploy-id="6af5fcdccc95912a69381bd0" data-netlify-site-id="13916249-6f3a-4758-b3a1-c442051931c0" data-agent-runner-id="6af5fc3be5ba08dddfda234a"></script>
+<script async src="/.netlify/scripts/hud?variant=owner-private" data-nf-variant="owner-private" data-netlify-site-id="13916249-6f3a-4758-b3a1-c442051931c0" data-app-host="app.netlify.com"></script>
